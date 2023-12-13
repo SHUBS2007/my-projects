@@ -1,104 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Developer | Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form validation || Learningrobo</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"
-    integrity="sha512-gUT7Mc7VgDqdf3xmUNihj9Y/9CklISmjYoQloQ5R8A6Ep+IFZZncZj+stzlL4TdblhLZb07LN7xwriGXX6Zs3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <!--Bootstrap 3 (for Glyphicons)  -->
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-  <!-- Bootstrap 5 JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-  <section class="hero_section">
-    <div class="text_container">
-      <h2><span class="lg_text">Hi,</span> I am Shubham </h2>
-      <h1 class="lg_text">FULL STACK DEVELOPER</h1>
+  <div class="container">
+    <div class="wrapper">
+      <header>Login Form</header>
+      <form action="#">
+        <div class="field email">
+          <div class="input-area">
+            <input type="text" placeholder="Email Address">
+            <i class="icon fas fa-envelope"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt">Email can't be blank</div>
+        </div>
+        <div class="field password">
+          <div class="input-area">
+            <input type="password" placeholder="Password">
+            <i class="icon fas fa-lock"></i>
+            <i class="error error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="error error-txt">Password can't be blank</div>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+      <div class="sign-txt">Not a member? <a href="#">Signup now</a></div>
     </div>
-  </section>
-  <section class="black_box">
-    <h2>WORK, I CAN DO FOR <span class="YOU">YOU</span></h2>
-  </section>
-  <section class="work">
-    <div class="grid_item">
-      <div class="card">
-        <div class="SHUBHAM">
-          <img src="web.png" alt="web development" />
-        </div>
-        <div class="card_content">
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-            quibusdam ex quaerat quasi nostrum tempore.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="grid_item">
-      <div class="card">
-        <div class="SHUBHAM">
-          <img src="mobile.png" alt="app development" />
-        </div>
-        <div class="card_content">
-          <h3>App Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-            quibusdam ex quaerat quasi nostrum tempore.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="grid_item">
-      <div class="card">
-        <div class="SHUBHAM">
-          <img src="uiux.png" alt="web development" />
-        </div>
-        <div class="card_content">
-          <h3>UI UX Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-            quibusdam ex quaerat quasi nostrum tempore.
-          </p>      
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- FOOTER  -->
-  <footer class="footer-bs">
-    <div class="row">
-      <div class="col-md-3 footer-brand animated fadeInLeft">
-        <h2>About Me</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro assumenda aperiam libero natus architecto
-          ab provident fugiat ullam!
-          .</p>
-      </div>
-      <div class="col-md-2 footer-social animated fadeInDown">
-        <h4>Contact Me</h4>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">RSS</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 footer-ns animated fadeInRight">
-        <h4>Newsletter</h4>
-        <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-      </div>
-    </div>
-  </footer>
+    <div class="credit">Made with <span style="color:tomato">❤</span> by <a
+        href="https://www.learningrobo.com/">Learning Robo</a></div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
